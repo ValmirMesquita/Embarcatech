@@ -1,1 +1,36 @@
 Teste de envio de dados via linha de comandos git Bash.
+
+Passo a passo: Criar e enviar um projeto pro GitHub via Git Bash
+1. Crie uma pasta pro seu projeto
+Você pode fazer isso via terminal:
+
+mkdir meu-projeto
+cd meu-projeto
+
+2. Inicialize um repositório Git
+git init
+
+3. Crie seus arquivos
+Por exemplo:
+echo "# Meu Projeto Incrível" > README.md
+
+Ou crie arquivos manualmente e salve na pasta.
+4. Adicione os arquivos ao Git
+git add .
+
+5. Faça um commit
+git commit -m "Primeiro commit"
+
+6. Crie um repositório no GitHub
+Agora vai até o site do GitHub → clique em “New” 
+(ou “Novo Repositório”) → dá um nome → cria (sem inicializar com README nem .gitignore).
+
+7. Conecte seu repositório local ao remoto
+No GitHub, depois de criar o repositório, ele vai te mostrar a URL. Copia a HTTPS.
+Exemplo:
+git remote add origin https://github.com/seu-usuario/nome-do-repo.git
+(Se quiser confirmar que adicionou corretamente, pode rodar: git remote -v)
+
+8. Envie o projeto para o GitHub
+git branch -M main
+git push -u origin main
