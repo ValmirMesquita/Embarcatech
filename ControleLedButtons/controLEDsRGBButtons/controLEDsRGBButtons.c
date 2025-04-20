@@ -12,12 +12,12 @@ void set_leds(bool red, bool green, bool blue );
 void set_pin();
 
 
-
+/*--------- Função principal ---------- */
 int main()
 {
     stdio_init_all();
 
-    set_pin();
+    set_pin(); /*Chamada da set_pinos */
 
     while (true) {
 
@@ -31,8 +31,8 @@ int main()
         }
         else if (gpio_get(BTN_A_PIN))
         {
-        
             set_leds(1,0,0);  /*Coloca o pino LED_B_PIN como blue*/
+
         }
         else if (gpio_get(BTN_B_PIN))
         {
