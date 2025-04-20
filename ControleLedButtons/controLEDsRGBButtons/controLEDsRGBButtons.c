@@ -43,9 +43,9 @@ int main()
         if (gpio_get(BTN_A_PIN) && gpio_get(BTN_B_PIN))
         {
             /*Chada da função void set_leds(bool red, bool green, bool blue ) 
-            Ex: set_leds(1, 1, 1 ) Informando que os leds estaram em estado ativo
+            Ex: set_leds(1, 1, 1 ) Informando que os leds estaram em nivel logico alto
             com passagem dos parametros da função*/
-            set_leds(1,1,1);  /*Coloca o pino LED_B_PIN como blue*/
+            set_leds(1,1,1);  
 
         }
         else if (gpio_get(BTN_A_PIN))
