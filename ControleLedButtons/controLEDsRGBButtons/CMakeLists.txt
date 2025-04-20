@@ -47,6 +47,7 @@ pico_enable_stdio_usb(controLEDsRGBButtons 1)
 # Add the standard library to the build
 target_link_libraries(controLEDsRGBButtons
         pico_stdlib
+        hardware_pwm
         )
 
 # Add the standard include files to the build

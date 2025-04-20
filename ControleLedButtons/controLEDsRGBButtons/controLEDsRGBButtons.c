@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 
-// #include "hardware/pwm.h"
-// #include "hardware/clocks.h"
+#include "hardware/pwm.h"
+#include "hardware/clocks.h"
 
 #define LED_R_PIN 13
 #define LED_G_PIN 11
@@ -64,7 +64,7 @@ int main()
 
      // Inicializar o PWM no pino do buzzer
      pwm_init_buzzer(BUZZER_PIN);
-    set_pin(); /*Chamada da set_pinos */
+     set_pin(); /*Chamada da set_pinos */
 
     while (true) {
 
@@ -74,7 +74,7 @@ int main()
             Ex: set_leds(1, 1, 1 ) Informando que os leds estaram em nivel logico alto
             com passagem dos parametros da função*/
             set_leds(1,1,1); 
-            beep(BUZZER_PIN, 500); // Bipe de 500ms 
+            //beep(BUZZER_PIN, 500); // Bipe de 500ms 
 
         }
         else if (gpio_get(BTN_A_PIN))
