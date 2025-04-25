@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+
 #define TAM_FILA 8
 int fila[TAM_FILA];
 int inicio = 0;
