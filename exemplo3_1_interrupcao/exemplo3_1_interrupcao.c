@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+
+
 #define LED_PIN 12
 #define BUTTON_PIN 5
 
 volatile bool flag_evento = false;
 
+// retorno de chamada 
 void gpio_callback(uint gpio, uint32_t events) {
     if (gpio == BUTTON_PIN && (events & GPIO_IRQ_EDGE_FALL)) {
         flag_evento = true;
