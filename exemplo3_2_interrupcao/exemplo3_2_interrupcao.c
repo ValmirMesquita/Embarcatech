@@ -34,13 +34,18 @@ int main() {
         } else {
             printf("Fila cheia! Não foi possível produzir.\n");
         }
-        sleep_ms(500);
+        sleep_ms(1000);
         int valor;
         if (remover(&valor)) {
             printf("Consumido: %d\n", valor);
+            printf("Inicio: %d\n", inicio);
+            printf("Fim: %d\n", fim);
+            printf("-----------------------------------\n");
+            printf("br");
+            
         } else {
             printf("Fila vazia! Nada para consumir.\n");
         }
-        sleep_ms(500);
+        sleep_ms(100);
     }
 }
