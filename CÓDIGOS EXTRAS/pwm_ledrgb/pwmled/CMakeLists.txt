@@ -41,8 +41,8 @@ pico_set_program_name(pwmled "pwmled")
 pico_set_program_version(pwmled "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(pwmled 0)
-pico_enable_stdio_usb(pwmled 0)
+pico_enable_stdio_uart(pwmled 1)
+pico_enable_stdio_usb(pwmled 1)
 
 # Add the standard library to the build
 target_link_libraries(pwmled

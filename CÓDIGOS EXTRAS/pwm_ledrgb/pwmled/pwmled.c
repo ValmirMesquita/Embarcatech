@@ -5,6 +5,7 @@
 // Define constantes e variáveis
 #define LED 12                             // Define o pino 12 como LED controlado por PWM
 #define LED2 13                            // Define o pino 13 como segundo LED (não usado no PWM)
+
 const uint16_t Periodo = 2000;             // Valor máximo da contagem do PWM (define resolução)
 const uint DivisorPWM = 16;                // Divisor da frequência do clock do PWM (define frequência final)
 const uint16_t LED_STEP = 100;             // Passo de incremento/decremento do brilho
