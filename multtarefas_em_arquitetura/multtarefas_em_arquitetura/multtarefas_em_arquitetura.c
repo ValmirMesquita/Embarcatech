@@ -1,3 +1,12 @@
+/*
+    IFMA - Instituto Federal do Maranhão 
+    Disciplina: Sistemas Embarcados / Arquitetura de Microcontroladores
+    Aluno(a): Valmir Linhares de Sousa de Mesquita
+    Matrícula: 
+    Link GitHub: https://github.com/ValmirMesquita/Embarcatech/tree/main/multtarefas_em_arquitetura%2Fmulttarefas_em_arquitetura
+
+*/
+
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/adc.h"
