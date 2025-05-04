@@ -15,6 +15,7 @@
 #include "hardware/pwm.h"
 #include "pico/multicore.h"
 
+
 // Definições
 #define LIMIAR_ESTADO 70  // Limiar para emergência
 

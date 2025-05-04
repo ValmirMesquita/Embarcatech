@@ -51,6 +51,7 @@ target_link_libraries(multtarefas_em_arquitetura
         hardware_pwm
         pico_multicore
         hardware_clocks
+      
   
         )
 
